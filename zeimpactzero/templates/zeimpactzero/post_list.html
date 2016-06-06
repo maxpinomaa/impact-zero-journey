@@ -1,0 +1,19 @@
+{% load embed_video_tags %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }} </a></h2>
+        <br>
+        {% video post.possiblevideo 'small' %}
+        <br>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+    
+</html>
