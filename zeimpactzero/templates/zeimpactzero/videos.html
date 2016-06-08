@@ -2,10 +2,9 @@
 {% load embed_video_tags %}
 {% block content %}
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }} </a></h2>
-        <br>
+    <div class="post">
+        <h2>{{ post.title }} </a></h2>
+            <p class="dateri">{{ post.published_date }}</p>
         {% video post.possiblevideo 'small' %}
         <br>
         <p>{{ post.text|linebreaks }}</p>
