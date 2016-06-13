@@ -10,18 +10,20 @@
     </head>
     <body>
         <div class="page-header">
-            <h1><a href="/">ImpactZero Cycling Trip</a></h1>
-            <p>Info about the trip. Cool stuff lots.</p>
+            <h1 class="header-title"><a href="/">ImpactZero Cycling Trip</a></h1>
+            <p class="header-text">Info about the trip. Cool stuff lots.</p>
+            <div class="top-menu">
+                <ul>
+                  <li><a class="active" href="#home">The project</a></li>
+                  <li><a href="#about">Who I am</a></li>
+                  <li><a href="#map">Route</a></li>                  
+                  <li><a href="{% url 'videos_list' %}">Adventure Diary</a></li>
+                  <li><a href="#links">Action links</a></li>
+                  <li><a href="#contact">Get in touch</a></li>                  
+                </ul>
         </div>
-        <ul>
-              <li><a class="active" href="#home">Home</a></li>
-              <li><a href="{% url 'videos_list' %}">Adventure Diary</a></li>
-              <li><a href="#contact">Get in touch</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#map">Route</a></li>
-              <li><a href="#links">Action links</a></li>
-        </ul>        
-
+        </div>
+        
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
