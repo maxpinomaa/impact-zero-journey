@@ -1,0 +1,9 @@
+{% extends 'zeimpactzero/base.html' %}
+{% block title %}Route of the journey{% endblock %}
+{% load embed_video_tags %}
+{% block content %}
+<h2>Route</h2>
+<img src="/static/map.jpg" style="width:512px;height:391px;">
+<h2>Stops</h2>
+<img src="/static/route.jpg">
+{% endblock %}

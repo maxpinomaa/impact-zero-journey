@@ -15,6 +15,10 @@
     margin-left:20px;
 }
 
+.header-text{
+    margin-left:20px;
+}
+
 .content {
     margin-left: 5px;
 }
@@ -30,7 +34,15 @@ h1, h2, h3, h4 {
 .dateri {
 }
 
+.underground {
+    padding: 20px 20px 20px 20px;
+    background: black;
+    height: 400px;
+    width: 400px;
+}
+
 .col-md-8 {
+    max-width:400px;
 }
 
 .save {

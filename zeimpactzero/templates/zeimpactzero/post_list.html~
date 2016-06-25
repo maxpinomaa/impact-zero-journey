@@ -2,7 +2,7 @@
 {% load embed_video_tags %}
 {% block content %}
 {% for post in posts %}
-    <div>
+    <div class="post">
         <p>published: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }} </a></h2>
         <br>

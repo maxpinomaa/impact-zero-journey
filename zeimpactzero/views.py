@@ -9,3 +9,13 @@ def videos_list(request):
 def post_list(request):
     posts = Post.objects.filter(typeofpost='front')
     return render(request, 'zeimpactzero/post_list.html', {'posts': posts})
+    
+def route(request):
+    posts = Post.objects.filter(typeofpost='video')
+    return render(request, 'zeimpactzero/route.html', {'posts': posts})
+    
+def supporters(request):
+    posts = Post.objects.filter(typeofpost='video')
+    return render(request, 'zeimpactzero/supporters.html', {'posts': posts})
+    
+    
